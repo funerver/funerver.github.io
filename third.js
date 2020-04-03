@@ -1,0 +1,11 @@
+var clickAmount = 0;
+            
+function clickEvent () {
+    clickAmount += 1;
+    console.log( clickAmount );
+    document.getElementById("display_score").innerHTML = clickAmount;
+    if(clickAmount == 100){
+        alert("스트레스가 너무 싸여 과도 피로 향상에 의해 당신의 캐릭터가 죽고 말았습니다...")
+        location.href = "https://www.google.com"
+    }
+}
